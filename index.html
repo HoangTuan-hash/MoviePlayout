@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- MAGNIFIC POPUP -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
     <!-- MAIN -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -64,8 +66,8 @@
               <div class="carousel-item active">
                 <img class="d-block w-100" src="./img/hero-1.jpg" alt="First slide">
                 <div class="container carousel-caption d-none d-md-block ">
-                    <p>Action, Adventure, Fantasy</p>
-                    <h2>End of the World: Part II</h2>
+                    <h2>Action, Adventure, Fantasy</h2>
+                    <h1>End of the World: Part II</h1>
                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
                     <div class="carousel__trailer">
                         <span>PG</span>
@@ -119,7 +121,13 @@
               <img src="./img/movie-1.jpg " class="img-fluid" alt="">
               <div class="newIn__overlay"></div>
               <div class="newIn__play">
-                <!-- icon play va chu trang -->
+                <div class="newIn__play--text">
+                  <a class="video" title="Test title" href="https://www.youtube.com/watch?v=5zdBG-iGfes">
+                    <i class="fa fa-play"></i>
+                  </a>
+                  <p>read more</p>
+                  <span>Released: 7 Mar, 2017</span>
+                </div>
               </div>
             </div>
             <div class="newIn__text">
@@ -135,7 +143,17 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="newIn__img">
-              <img src="./img/movie-2.jpg" class="img-fluid" alt="">
+              <img src="./img/movie-2.jpg " class="img-fluid" alt="">
+              <div class="newIn__overlay"></div>
+              <div class="newIn__play">
+                <div class="newIn__play--text">
+                  <a class="video" title="Test title" href="https://www.youtube.com/watch?v=5zdBG-iGfes">
+                    <i class="fa fa-play"></i>
+                  </a>
+                  <p>read more</p>
+                  <span>Released: 7 Mar, 2017</span>
+                </div>
+              </div>
             </div>
             <div class="newIn__text">
               <p>The last post</p>
@@ -148,9 +166,19 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+          <div class="col-6 col-md-3">
             <div class="newIn__img">
-              <img src="./img/movie-3.jpg" class="img-fluid" alt="">
+              <img src="./img/movie-3.jpg " class="img-fluid" alt="">
+              <div class="newIn__overlay"></div>
+              <div class="newIn__play">
+                <div class="newIn__play--text">
+                  <a class="video" title="Test title" href="https://www.youtube.com/watch?v=5zdBG-iGfes">
+                    <i class="fa fa-play"></i>
+                  </a>
+                  <p>read more</p>
+                  <span>Released: 7 Mar, 2017</span>
+                </div>
+              </div>
             </div>
             <div class="newIn__text">
               <p>The last post</p>
@@ -163,9 +191,19 @@
               </div>
             </div>
           </div>
-          <div class=" col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+          <div class="col-6 col-md-3">
             <div class="newIn__img">
-              <img src="./img/movie-4.jpg" class="img-fluid" alt="">
+              <img src="./img/movie-4.jpg " class="img-fluid" alt="">
+              <div class="newIn__overlay"></div>
+              <div class="newIn__play">
+                <div class="newIn__play--text">
+                  <a class="video" title="Test title" href="https://www.youtube.com/watch?v=5zdBG-iGfes">
+                    <i class="fa fa-play"></i>
+                  </a>
+                  <p>read more</p>
+                  <span>Released: 7 Mar, 2017</span>
+                </div>
+              </div>
             </div>
             <div class="newIn__text">
               <p>The last post</p>
@@ -178,11 +216,12 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
     <!-- SHOW TIME -->
-    <section class="showTime container py-5">
+    <section class="showTime container py-5" id="showTime">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#mon" role="tab" aria-controls="home" aria-selected="true">MON</a>
@@ -192,6 +231,18 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#today" role="tab" aria-controls="contact" aria-selected="false">TODAY </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#thu" role="tab" aria-controls="contact" aria-selected="false">THU </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#fri" role="tab" aria-controls="contact" aria-selected="false">FRI </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#sat" role="tab" aria-controls="contact" aria-selected="false">SAT </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#sun" role="tab" aria-controls="contact" aria-selected="false">SUN</a>
         </li>
       </ul>
 
@@ -226,16 +277,16 @@
           <div class="py-2"></div>
 
           <div class="row">
-            <div class="col-2">
+            <div class="col-12 col-md-12 col-lg-2 ">
               <img src="./img/movie-7.jpg" class="img-fluid" alt="">
             </div>
-            <div class="col-10">             
+            <div class="col-12 col-md-12 col-lg-10">             
               <p>ACTION, ADVENTURE, FANTASY</p>
               <h3>It's over</h3>
               <p>European mercenaries searching for black powder become embroiled in the defense of It's over of China against a horde of monstrous creatures.</p>
               <a href="#">FULL SYNOPSIS<i class="fa fa-angle-right"></i></a>
               <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-md-9 col-lg-8">
                   <i class="fa fa-clock"></i>
                   <span>VIEWING TIMES </span>
                   <button type="button" class="btn btn-secondary" disabled>14:45</button>
@@ -243,7 +294,7 @@
                   <button type="button" class="btn btn-secondary">20:30</button>
                   <button type="button" class="btn btn-secondary">24:45</button>         
                 </div>
-                <div class="col-4 text-right">
+                <div class="col-12 col-md-3 col-lg-4 text-sm-right">
                   <span>105 MIN</span>
                   <span>15</span>
                 </div>
@@ -251,6 +302,12 @@
             </div>
           </div>
         </div>
+        <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="today" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="contact-tab">...</div>
       </div>
     </section>
 
@@ -280,5 +337,25 @@
     <!-- BOOTSTRAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MAGNIFIC POPUP -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script>
+      $('.video').magnificPopup({
+      type: 'iframe',
+
+      iframe: {
+        markup: '<div class="mfp-iframe-scaler">'+
+                    '<div class="mfp-close"></div>'+
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                    '<div class="mfp-title">Some caption</div>'+
+                  '</div>'
+      },
+      callbacks: {
+        markupParse: function(template, values, item) {
+        values.title = item.el.attr('title');
+        }
+      }
+});
+    </script>
 </body>
 </html>

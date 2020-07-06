@@ -13,6 +13,15 @@ header{
 #movieNavbar .navbar-nav {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
+#movieNavbar .nav-link{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: .8em;
+    padding: 20px 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
 #movieNavbar .navbar-nav .nav-item::after{
     content: "";
     width: 0%;
@@ -74,6 +83,7 @@ header{
     line-height: 45px;
     font-size: 13px;
 }
+
 #movie-carousel .carousel__trailer button{
     padding: 0.5em 1.5em;
     border-radius: 2em;
@@ -82,10 +92,53 @@ header{
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+#movie-carousel .carousel-caption{
+    padding-right: 19em;
+}
+#movie-carousel .carousel-caption h2{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fbbd61;
+}
+#movie-carousel .carousel-caption h1{
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+#movie-carousel .carousel-caption p{
+    font-size: 18px;
+    
+}
 /* NEW IN */
+.newIn{
+    padding-top: 100px;
+}
+.newIn h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 40px;
+
+    letter-spacing: 1.7px;
+    color: #ec7532;
+    font-size: 18px;
+    
+    position: relative;
+}
+.newIn h3::after{
+    content: "";
+    display: block;
+    width: 10%;
+    height: 3px;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
 .newIn__img{
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .newIn__overlay{
     width: 200%;
@@ -104,29 +157,126 @@ header{
 .newIn__img:hover .newIn__overlay{
     transform: skewX(30deg) translateX(-20%);
 }
+.newIn__play{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newIn__play--text{
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.7s;
+    transform: scale(0.7);
+}
+.newIn__play--text i{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all 0.7s;
+}
+.newIn__play--text a{
+    color: #fff;
+}
+.newIn__img .newIn__play--text i:hover{
+    transform: scale(0.8);
+}
+.newIn__play--text p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.newIn__play--text span{
+    color: #fff;
+    opacity: 0.75;
+}
+.newIn__img:hover .newIn__play--text{
+    opacity: 1;
+    transform: scale(1);
+}
+.newIn__text{
+    font-size: 18px;
+    text-align: center;
+    color: #4a4a4a;
+}
+.newIn__text i{
+    color: #fbbd61;
+}
     /* coming soon */
-   .comingSoon{
-       background-color: black;
-       position: relative;
-   }
-   .comingSoon__bg{
-       background-image: url(../img/slide-3.png);
-       background-size: cover;
+.comingSoon{
+    background-color: black;
+    position: relative;
+}
+.comingSoon__bg{
+    background-image: url(../img/slide-3.png);
+    background-size: cover;
 
-       position: absolute;
-       top: 0;
-       left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-       width: 100%;
-       height: 100%;
-      
-   }
-   .comingSoon__content{
-       color: white;
-   }
+    width: 100%;
+    height: 100%;
+    
+}
+.comingSoon__content{
+    color: white;
+}
+/* SHOW TIME */
+#showTime .nav-tabs{
+    border-bottom: 1px solid #d8d8d8;
+}
+#showTime .nav-tabs .nav-item{
+    position: relative;
+}
+#showTime .nav-tabs .nav-link{
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #4a4a4a;
+}
+#showTime .nav-tabs .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    transition: all 0.3s;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#showTime .nav-tabs .nav-link:hover::after{
+    width: 100%;
+}
+#showTime .nav-tabs .active{
+    text-decoration: underline;
+    color: #ec7532;
+}
+#showTime .nav-tabs .active:hover{
+    text-decoration: none;
+}
+#showTime .nav-tabs .active::after{
+    width: 100%;
+}
+#myTabContent .tab-pane>.row{
+    border-bottom: 1px solid #d8d8d8;;
+    padding: 50px 0;
+}
 /* REPOSIVE */
 /* kich thuoc 0-576px */
-@media screen and (max-width:576px){
+@media screen and (max-width:600px){
     #myTabContent img{
         width: 100%;
     }
