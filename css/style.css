@@ -1,6 +1,8 @@
 /* GLOBAL */
 html,body{
     font-family: 'Roboto Condensed', sans-serif;
+    color: #717171;
+    font-size: 16px;
 }
 /* HEADER */
 header{
@@ -212,29 +214,10 @@ header{
 .newIn__text i{
     color: #fbbd61;
 }
-    /* coming soon */
-.comingSoon{
-    background-color: black;
-    position: relative;
-}
-.comingSoon__bg{
-    background-image: url(../img/slide-3.png);
-    background-size: cover;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-    
-}
-.comingSoon__content{
-    color: white;
-}
 /* SHOW TIME */
 #showTime .nav-tabs{
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: none;
 }
 #showTime .nav-tabs .nav-item{
     position: relative;
@@ -270,10 +253,98 @@ header{
 #showTime .nav-tabs .active::after{
     width: 100%;
 }
-#myTabContent .tab-pane>.row{
-    border-bottom: 1px solid #d8d8d8;;
+#myTabContent .tab-pane .showTime__list{
+    border-top: 1px solid #d8d8d8;;
     padding: 50px 0;
+    margin-left: 0;
 }
+#myTabContent .tab-pane .movie-genre{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+}
+#myTabContent .tab-pane .movie-name{
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #101010;
+}
+#myTabContent .tab-pane .synopsis{
+    font-size: 12px;
+    position: relative;
+    letter-spacing: 4px;
+    color: #ec7532;
+}
+#myTabContent .opening-time .viewing{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+}
+#myTabContent .opening-time .length-of-movie{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+#myTabContent .opening-time .age{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 33px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #4a4a4a;
+}
+
+
+/* coming soon */
+/* .comingSoon{
+    background-color: black;
+    position: relative;
+}
+.comingSoon__bg{
+    background-image: url(../img/slide-3.png);
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+}
+.comingSoon__content{
+    color: white;
+}
+.comingSoon__content h2{
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 1.7px;
+    position: relative;
+    border-bottom: 1px solid #d8d8d8;
+}
+.comingSoon__content h2::after{
+    position: absolute;
+    right: auto;
+    bottom: -1px;
+    display: block;
+    width: 125px;
+    height: 4px;
+    content: '';
+    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+}
+.comingSoon__content .col-6>span{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+} */
+
+
+
 /* REPOSIVE */
 /* kich thuoc 0-576px */
 @media screen and (max-width:600px){
