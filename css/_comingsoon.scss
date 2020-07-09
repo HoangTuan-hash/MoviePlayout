@@ -63,6 +63,45 @@
                     color: #fff;
                 }
             }
+            .comingSoon__video{
+                position: relative;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+                .playIcon{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        width: 80px;
+                        height: 80px;
+                        text-align: center;
+                        line-height: 80px;
+    
+                        border: 2px solid #ec7532;
+                        border-radius: 50%;
+                        font-size: 25px;
+    
+                        transition: all 0.7s;
+
+                        &:hover{
+                            transform: scale(0.8);
+                        }
+                    }
+
+                   
+
+                    
+                }
+            }
         }
     }
 }

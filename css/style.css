@@ -183,7 +183,7 @@ header{
     height: 80px;
     text-align: center;
     line-height: 80px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     transition: all 0.7s;
 }
@@ -342,13 +342,80 @@ header{
     letter-spacing: 2px;
     color: #ec7532;
 } */
+/* MOVIELIST */
+.movieList{
+    padding: 50px 0;
+    background-color: black;
+}
+.movieList__item{
+    text-align: center;
+}
+.movieList__item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.movieList__item h5{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    overflow: hidden;
+    
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.movieList__item p{
+    font-size: 14px;
+    opacity: .5;
+    color: #fff;
+}
 
 
 
 /* REPOSIVE */
+
 /* kich thuoc 0-576px */
 @media screen and (max-width:600px){
+    /* RESPONSIVE NEW IN */
     #myTabContent img{
+        max-width: 100%;
         width: 100%;
     }
+    /* RESPONSIVE SHOW TIME */
+    #showTime .nav{
+        display: block;
+    }
+    #showTime .nav-tabs li.nav-item{
+        display: block;
+    }
+    #showTime .nav-tabs .nav-link::after{
+       width: 4px;
+       height: 0;
+       background: linear-gradient(to bottom, #ec7532, #fbbd61);
+    
+    }
+    #showTime .nav-tabs .nav-link:hover::after{
+        width: 4px;
+        height: 100%;
+    }
+    #showTime .nav-tabs .active::after{
+       width: 4px;
+       height: 100%;
+    }
+
+    /* RESPONSIVE COMING SOON */
+    .comingSoon__slide .comingSoon__text{
+        flex:100%;
+    }
+    .comingSoon__slide .comingSoon__video{
+        max-width: 100%;
+        flex:100%;
+    }
+}
+@media screen and (max-width:992px){
+    .container{
+        max-width: 970px;
+    } 
 }
