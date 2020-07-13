@@ -535,6 +535,7 @@ header .navbar .navbar-toggler-icon{
 }
 .contact h2{
     font-size: 23px;
+    font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 1px;
     color: #4a4a4a;
@@ -578,8 +579,9 @@ footer li a:hover{
 footer li a i{
     margin-right: 10px;
     color: #4a4a4a;
+    transition: all 0.5s;
 }
-footer li a i:hover{
+footer li a:hover i{
     color: #fbbd61;
 }
 .footer__copy{
@@ -623,12 +625,23 @@ footer li a i:hover{
     header .navbar-dark .navbar-brand{
         max-width: 150px;
     }
+    header .navbar-collapse{
+        background-color: black;
+        text-align: center;
+    }
+    header .navbar-collapse .active{
+        background-color: #ec7532;
+    }
     /* NEW IN */
     .newIn__img{
         max-width: 263px;
         border-radius: 0px;
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
+    }
+    /* SHOW TIME */
+    #showTime .nav-tabs .nav-link{
+        padding: 10px 20px;
     }
     /* FOOTER */
     .footer__item{
@@ -667,6 +680,7 @@ footer li a i:hover{
     /* RESPONSIVE COMING SOON */
     .comingSoon__slide .comingSoon__text{
         flex:100%;
+        max-width: 100%;
     }
     .comingSoon__slide .comingSoon__video{
         max-width: 100%;
