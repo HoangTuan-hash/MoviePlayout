@@ -13,9 +13,31 @@ html,body{
 header{
     position: absolute;
     top: 20px;
-    z-index: 99;
     left: 50%;
+    z-index: 99;
+    
+    font-size: 14px;
     transform: translateX(-50%);
+}
+header p i{
+    margin: 0 15px;
+}
+header p span{
+    border-right: 1px dotted #fff;
+    padding-right: 15px;
+}
+header .navbar-dark .navbar-toggler{
+    border: none;
+}
+header .navbar-dark .navbar-brand img{
+    width: 100%;
+}
+header .navbar .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+    color: #fbbd61;
+    background-image: none;
+    font-size: 25px;
 }
 #movieNavbar .navbar-nav {
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -98,6 +120,13 @@ header{
         transform: translateX(0);
     }
 }
+/* CAROUSEL */
+.movieCarousel .carousel__bg{
+    background-image: url(../img/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
 .carousel__trailer span{
     display: inline-block;
     width: 45px;
@@ -121,7 +150,7 @@ header{
     text-transform: uppercase;
 }
 #movie-carousel .carousel-caption{
-    padding-right: 19em;
+    
 }
 #movie-carousel .carousel-caption h2{
     font-size: 14px;
@@ -506,6 +535,7 @@ header{
 }
 .contact h2{
     font-size: 23px;
+    font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 1px;
     color: #4a4a4a;
@@ -549,8 +579,9 @@ footer li a:hover{
 footer li a i{
     margin-right: 10px;
     color: #4a4a4a;
+    transition: all 0.5s;
 }
-footer li a i:hover{
+footer li a:hover i{
     color: #fbbd61;
 }
 .footer__copy{
@@ -571,18 +602,48 @@ footer li a i:hover{
 /* REPOSIVE */
 /* kich thuoc < 992px */
 @media screen and (max-width:992px){
-    .container{
+    /* HEADER */
+    header.container{
+        max-width: 750px;
+    }
+    header .navbar-dark .navbar-brand{
+        max-width: 180px;
+    }
+    #movieNavbar .nav-link{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    /* COMINGSOON */
+
+    .comingSoon .container{
         max-width: 970px;
     } 
 }
 /* kich thuoc < 768px */
 @media screen and (max-width:767px){
+    /* HEADER */
+    header .navbar-dark .navbar-brand{
+        max-width: 150px;
+    }
+    header .navbar-collapse{
+        background-color: black;
+        text-align: center;
+    }
+    header .navbar-collapse .active{
+        background-color: #ec7532;
+    }
+    /* NEW IN */
     .newIn__img{
         max-width: 263px;
         border-radius: 0px;
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
     }
+    /* SHOW TIME */
+    #showTime .nav-tabs .nav-link{
+        padding: 10px 20px;
+    }
+    /* FOOTER */
     .footer__item{
         margin-bottom: 30px;
     } 
@@ -619,6 +680,7 @@ footer li a i:hover{
     /* RESPONSIVE COMING SOON */
     .comingSoon__slide .comingSoon__text{
         flex:100%;
+        max-width: 100%;
     }
     .comingSoon__slide .comingSoon__video{
         max-width: 100%;
